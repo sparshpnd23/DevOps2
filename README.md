@@ -23,6 +23,7 @@ Build an image from this Dockerfile using
 
 
 Run a container from your newly built image & expose it to any available port using PAT. 
+
 **Ex- docker run -it -p 2301:8080 --name jenpro  jentest:v5**
 
 
