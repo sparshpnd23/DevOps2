@@ -39,6 +39,33 @@ Step - 2: Now, we move on to our Jenkins tasks.
    In this task, the web pages downloaded inside the container are being transferred to the base Redhat using scp. I have already   authorized a ssh key from my container to Redhat.
    
    ![](/j2/transfer.png)
+   
+   
+   **TASK 3 : Deployment**
+   In this task, the file type is checked by checking the extension. Like if the pages are build in html, then the code would detect and launch an httpd server to deploy the pages. If the pages are build in php, then a php supporting container would be deployed. 
+   I have checked just 2 types - html & php but you can add more depending upon your requirements.
+   The suitable container will auto launch and the code will be auto deployed.
+   
+   
+   ![](/j2/dep1.png)
+   
+   
+   ![](j2/dep2.png)
+   
+   
+   **TASK 4 : Testing**
+    In this task, the deployed code would be tested and if there is any error, an email will be automatically sent to the mentioned emails. For this, I have used the status method, i.e. , whenever we access any web page using curl and linux, the status is 200 if the page is working, otherwise not. So, I have segregated the status annd used it in my concept. The exit 1 would deliberately fail the task.
+    
+    ![](/j2/test2.5.png)
+    
+    ![](/j2/test1.png)
+    
+    ![](/j2/test2.png)
+    
+    If your email isn't working, you need to go to Jenkins configuration and do the following setup.
+    ![](/j2/test3.png)
+    
+    
 
 
 
