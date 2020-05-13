@@ -56,14 +56,14 @@ Step - 2: Now, we move on to our Jenkins tasks.
    **TASK 4 : Testing**
     In this task, the deployed code would be tested and if there is any error, an email will be automatically sent to the mentioned emails. For this, I have used the status method, i.e. , whenever we access any web page using curl and linux, the status is 200 if the page is working, otherwise not. So, I have segregated the status annd used it in my concept. The exit 1 would deliberately fail the task.
     
-    ![](/j2/test2.5.png)
+   ![](/j2/test2.5.png)
     
-    ![](/j2/test1.png)
+   ![](/j2/test1.png)
     
-    ![](/j2/test2.png)
+   ![](/j2/test2.png)
     
-    If your email isn't working, you need to go to Jenkins configuration and do the following setup.
-    ![](/j2/test3.png)
+   If your email isn't working, you need to go to Jenkins configuration and do the following setup.
+   ![](/j2/test3.png)
     
     
 
