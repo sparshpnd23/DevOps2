@@ -19,8 +19,9 @@ After that, we have exposed Port 8080 because Jenkins runs on port 8080.
 ![](/j2/df.png)
 
 Build an image from this Dockerfile using
-** docker build -t NAME:TAG /location of Dockerfile/**
-
+**docker build -t NAME:TAG /location of Dockerfile/**
+Run a container from your newly built image & expose it to any available port using PAT. 
+**Ex- docker run -it -p 2301:8080 --name jenpro  jentest:v5**
 
 
 Step - 2: Now, we move on to our Jenkins tasks.
