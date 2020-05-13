@@ -64,6 +64,18 @@ Step - 2: Now, we move on to our Jenkins tasks.
     
    If your email isn't working, you need to go to Jenkins configuration and do the following setup.
    ![](/j2/test3.png)
+   
+   
+   **TASK 5 : Monitoring**
+        
+         In this task, I have checked if the container is working fine. If the container exists, the task will fail due to exit 1. If the container is not running, the task will give a success signal. As soon as this task will succeed, the above mentioned deployment task will be auto triggered to deploy the containers. 
+         
+   ![](/j2/monitor.png)
+   
+   ![](/j2/monitor2.png)
+   
+   
+   Viola !! The system is ready to use.
     
     
 
