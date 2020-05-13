@@ -42,7 +42,7 @@ Step - 2: Now, we move on to our Jenkins tasks.
    
    
    **TASK 3 : Deployment**
-   In this task, the file type is checked by checking the extension. Like if the pages are build in html, then the code would detect and launch an httpd server to deploy the pages. If the pages are build in php, then a php supporting container would be deployed. 
+   In this task, the file type is checked by checking the extension. Like if the pages are build in html, the extension of the file would be .html, then the code would detect and launch an httpd server to deploy the pages. If the pages are build in php, the extension of the file would be .php, then a php supporting container would be deployed. 
    I have checked just 2 types - html & php but you can add more depending upon your requirements.
    The suitable container will auto launch and the code will be auto deployed.
    
@@ -64,6 +64,14 @@ Step - 2: Now, we move on to our Jenkins tasks.
     
    If your email isn't working, you need to go to Jenkins configuration and do the following setup.
    ![](/j2/test3.png)
+   
+   
+   
+   If you are still facing any errors in email, go to your jenkins container &  run ---
+   ![](/j2/vi.png)
+   
+   In that file, in the **JENKINS_JAVA_OPTIONS='   "**, make the following changes :
+   ![](/j2/edit.png)
    
    
    **TASK 5 : Monitoring**
