@@ -68,7 +68,7 @@ Step - 2: Now, we move on to our Jenkins tasks.
    
    **TASK 5 : Monitoring**
         
-         In this task, I have checked if the container is working fine. If the container exists, the task will fail due to exit 1. If the container is not running, the task will give a success signal. As soon as this task will succeed, the above mentioned deployment task will be auto triggered to deploy the containers. 
+ In this task, I have checked if the container is working fine. If the container exists, the task will fail due to exit 1. If the container is not running, the task will give a success signal. As soon as this task will succeed, the above mentioned deployment task will be auto triggered to deploy the containers. 
          
    ![](/j2/monitor.png)
    
