@@ -57,7 +57,7 @@ Step - 2: Now, we move on to our Jenkins tasks.
    ![](/j2/dep1.png)
    
    
-   ![](j2/dep2.png)
+   ![](new.png)
    
    
    **TASK 4 : Testing**
