@@ -61,7 +61,7 @@ Step - 2: Now, we move on to our Jenkins tasks.
    
    
    **TASK 4 : Testing**
-    In this task, the deployed code would be tested and if there is any error, an email will be automatically sent to the mentioned emails. For this, I have used the status method, i.e. , whenever we access any web page using curl and linux, the status is 200 if the page is working, otherwise not. So, I have segregated the status annd used it in my concept. The exit 1 would deliberately fail the task.
+    In this task, the deployed code would be tested and if there is any error, an email will be automatically sent to the mentioned emails. For this, I have used the status method, i.e. , whenever we access any web page using curl and linux, the status is 200 if the page is working, otherwise not. So, I have segregated the status and used it in my concept. The exit 1 would deliberately fail the task.
     
    ![](/j2/test2.5.png)
     
@@ -79,6 +79,11 @@ Step - 2: Now, we move on to our Jenkins tasks.
    
    In that file, in the **JENKINS_JAVA_OPTIONS='   "**, make the following changes :
    ![](/j2/edit.png)
+   
+   After that, run **sudo service jenkins restart** cmd in your jenkins container.
+   
+   If you still face error in sending email, & the popup says **authentication error**, you need to go to your google account & disable the two step authentication & turn on the **less secure app access** option below it.
+   After this, the email would be woorking absolutely fine.
    
    
    **TASK 5 : Monitoring**
