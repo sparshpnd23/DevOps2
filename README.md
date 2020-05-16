@@ -83,7 +83,7 @@ Step - 2: Now, we move on to our Jenkins tasks.
    After that, run **sudo service jenkins restart** cmd in your jenkins container.
    
    If you still face error in sending email, & the popup says **authentication error**, you need to go to your google account & disable the two step authentication & turn on the **less secure app access** option below it.
-   After this, the email would be woorking absolutely fine.
+   After this, the email would be working absolutely fine.
    
    
    **TASK 5 : Monitoring**
